@@ -1,97 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Home Page</title>
+<html lang="pt-br">
 
-		<link rel="stylesheet" href="./assets/css/styles.css" />
-	</head>
-	<body>
-		<nav>
-			<h2>
-				<img
-					src="/resources/logo.png"
-					alt="logomarca da linguagem de programação Python"
-					style="width: 30px; height: 30px"
-				/>
-				EasyLearn
-			</h2>
-			<div>
-				<a href="#inicio">Inicio</a>
-				<a href="#listagem">Listagem</a>
-				<a href="#contato">Contato</a>
-				<a href="#sobre">Sobre Nós</a>
-			</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>EasyLearn</title>
+
+	<link rel="stylesheet" href="./assets/css/styles.css" />
+	<link rel="icon" type="image/png" href="resources/logo.png">
+</head>
+
+<body>
+
+	<header class="cabecalho">
+		<nav class="cabecalho_menu">
+			<a href="index.html">Home</a>
+			<a href="trilhas.html">Trilhas</a>
+			<a href="sobre.html">Sobre Nós</a>
+			<a href="contato.html">Contato</a>
 		</nav>
-		<main>
-			<section id="inicio">
-				<h1>EasyLearn</h1>
-				<h5>
-					Plataforma de cursos rápidos sobre programação focados em
-					pessoas neurodivergentes ou que simplesmente precisam
-					aprender algo rápidamente.
-				</h5>
-			</section>
-			<section id="listagem">
-				<h2>Cursos de Programação</h2>
-				<hr />
+	</header>
 
-				<ul>
-					<li>
-						<article>
-							<h4>Python - Tipos Primitivos</h4>
-							<p>Tipos primitivos da linguagem Python</p>
-							<img
-								src="https://www.python.org/static/img/python-logo.png"
-								alt="logomarca da linguagem de programação Python"
-							/>
-						</article>
-					</li>
-					<li>
-						<article>
-							<h4>JPA - Mapeamento de Entidades</h4>
-							<p>NANAANA</p>
-						</article>
-					</li>
-					<li>
-						<article>
-							<h4>HTML - Tags Semânticas</h4>
-							<p>NANAANA</p>
-						</article>
-					</li>
-				</ul>
-			</section>
-			<section id="contato">
-				<div>
-					<h2>Contato</h2>
-					<hr />
-					<span>Telefone: 4002-8922</span>
-					<span>Email: bomdiaecia.maoee@sbt.com.br</span>
-				</div>
-			</section>
-			<section id="sobre">
-				<div>
-					<h2>Sobre Nós</h2>
-					<hr />
-					<p>
-						Plataforma de Cursos rápidos focada em entregar conteúdo
-						especializado em pessoas neurodivergentes.
-						<br />
-						Nascida no estado da Paraíba, na cidade de Campina
-						Grande, a rainha da borborema.
-					</p>
-				</div>
-			</section>
-		</main>
-		<footer>
-			<h2>EasyLearn</h2>
-			<div>
-				<a href="#inicio">Inicio</a>
-				<a href="#listagem">Listagem</a>
-				<a href="#contato">Contato</a>
-				<a href="#sobre">Sobre Nós</a>
+	<main class="apresentacao">
+		<section class="apresentacao_conteudo">
+			<h1 class="apresentacao_conteudo_titulo">EasyLearn</h1>
+			<p class="apresentacao_conteudo_texto">Plataforma de cursos rápidos sobre programação focada em pessoas
+				neurodivergentes ou que simplesmente precisam aprender algo rapidamente.</p>
+			<div class="apresentacao_links">
+				<h2 class="apresentacao_links_subtitulo">Estude com a gente!</h2>
+				<a class="apresentacao_links_navegacao" href="trilhas.html">Nossas trilhas</a>
+				<a class="apresentacao_links_navegacao" href="contato.html">Entre em contato</a>
 			</div>
-		</footer>
-	</body>
+		</section>
+	</main>
+
+</body>
+
+<footer class="rodape">
+	<p>Desenvolvido por EasyLearn ©️</p>
+</footer>
+
 </html>
