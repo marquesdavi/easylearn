@@ -1,81 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EasyLearn</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EasyLearn</title>
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="icon" type="image/png" href="../resources/logo.png" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</head>
 
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <link rel="icon" type="image/png" href="../resources/logo.png">
-</head>
+	<body>
+		<header class="cabecalho">
+			<nav class="cabecalho_menu">
+				<a href="../index.html">Home</a>
+				<a href="../trilhas.html">Trilhas</a>
+				<a href="../sobre.html">Sobre Nós</a>
+				<a href="../contato.html">Contato</a>
+			</nav>
+		</header>
 
-<body>
-    <header class="cabecalho">
-        <nav class="cabecalho_menu">
-            <a href="../index.html">Home</a>
-            <a href="../trilhas.html">Trilhas</a>
-            <a href="../sobre.html">Sobre Nós</a>
-            <a href="../contato.html">Contato</a>
-        </nav>
-    </header>
+		<main id="decisoes_condicionais">
+			<section class="conteudo">
+				<h1 class="titulo">Decisões Condicionais em JavaScript</h1>
+				<article>
+					<p class="texto">
+						As decisões condicionais em JavaScript permitem que você
+						tome diferentes caminhos de execução de acordo com as
+						condições definidas. Aprenda como utilizar as estruturas
+						if, else-if, else e métodos úteis para fazer
+						verificações em seus programas JavaScript.
+					</p>
+					<h2>Estrutura if</h2>
+					<p>
+						A estrutura <code>if</code> permite executar um bloco de
+						código se uma condição especificada for verdadeira.
+					</p>
+					<pre>
+                <code>
+let idade = 18;
+if (idade >= 18) {
+    console.log("Você é maior de idade.");
+}
+                </code>
+            </pre>
+					<h2>Estrutura else-if</h2>
+					<p>
+						A estrutura <code>else-if</code> permite verificar
+						várias condições diferentes para executar blocos de
+						código diferentes.
+					</p>
+					<pre>
+                <code>
+let hora = 14;
+if (hora < 12) {
+    console.log("Bom dia!");
+} else if (hora < 18) {
+    console.log("Boa tarde!");
+} else {
+    console.log("Boa noite!");
+}
+                </code>
+            </pre>
+					<h2>Estrutura else</h2>
+					<p>
+						A estrutura <code>else</code> é executada se nenhuma das
+						condições anteriores for verdadeira.
+					</p>
+					<pre>
+                <code>
+let diaDaSemana = "Sábado";
+if (diaDaSemana === "Sábado" || diaDaSemana === "Domingo") {
+    console.log("É final de semana!");
+} else {
+    console.log("É dia de semana.");
+}
+                </code>
+            </pre>
+					<h2>Métodos úteis para verificação</h2>
+					<p>
+						Além das estruturas condicionais, existem métodos úteis
+						para verificar valores em JavaScript, como
+						<code>isNaN()</code> para verificar se um valor não é um
+						número, e <code>includes()</code> para verificar se uma
+						string contém outra string.
+					</p>
+					<pre>
+                <code>
+let numero = "10";
+if (!isNaN(numero)) {
+    console.log("É um número válido.");
+} else {
+    console.log("Não é um número válido.");
+}
 
-    <main id="apresentacao">
-        <section class="apresentacao_conteudo">
-            <h1 class="apresentacao_conteudo_titulo">JavaScript: Programando na linguagem da WEB</h1>
-                <article>
-                    <p class="apresentacao_conteudo_texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Quam natus fugiat, quisquam voluptas at fuga laborum vero voluptates neque ea quae excepturi
-                        ullam distinctio, deleniti quibusdam quos quia temporibus sequi.
-                    </p>
-                    <table>
-                        <tr>
-                            <th>Conteúdo da Aula</th>
-                            <th>Link de Acesso</th>
-                        </tr>
-                        <tr>
-                            <td>Introdução</td>
-                            <td><a href="link_para_aula1" target="_blank">Aula
-                                    1</a></td>
-                        </tr>
-                        <tr>
-                            <td>Manipulando elementos da view</td>
-                            <td><a href="link_para_aula2" target="_blank">Aula
-                                    2</a></td>
-                        </tr>
-                        <tr>
-                            <td>Executando códigos a partir de um arquivo</td>
-                            <td><a href="link_para_aula3" target="_blank">Aula
-                                    3</a></td>
-                        </tr>
-                    </table>
-                </article>
-        </section>
-    </main>
-</body>
+let frase = "Olá, mundo!";
+if (frase.includes("Olá")) {
+    console.log("A frase contém a palavra 'Olá'.");
+} else {
+    console.log("A frase não contém a palavra 'Olá'.");
+}
+                </code>
+            </pre>
+					<h3>
+						Pronto para Aprender Mais? Siga nossas recomendações e
+						se aprofunde nesse conhecimento!
+					</h3>
+					<ol>
+						<li>
+							<h5>
+								Como usar condicionais em JavaScript - Hashtag
+								Programação
+							</h5>
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/TXOOSaMF2R8?si=k1y-BHoq0v_dnE6Q"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+							></iframe>
+						</li>
+						<li>
+							<h5>
+								Condições - Curso em Vídeo de Javascript <b>(Perfeito para quem quer uma explicação mais detalhada e compreensiva)</b>
+							</h5>
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/cOdG4eACN2A?si=Yx1_IhFW8JsyvsVg"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+							></iframe>
+						</li>
+						<li>
+							<h5>
+								Comando condicional IF e IF ELSE em Javascript -
+								Curso de Javascript Moderno - CFBCursos
+							</h5>
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/lDTKpamdXzc?si=-3xdpZMvHlQpUUWm"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+							></iframe>
+						</li>
+					</ol>
+				</article>
+			</section>
+		</main>
+	</body>
 
-<footer class="rodape">
-        <p>Desenvolvido por EasyLearn ©️</p>
-</footer>
-
+	<footer class="rodape">
+		<p>Desenvolvido por EasyLearn ©️</p>
+	</footer>
 </html>
 
 <style>
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
 
-    table {
-    border-collapse: collapse;
-    width: 100%;
-}
+	th,
+	td {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
 
-th,
-td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-th {
-    background-color: #f2f2f2;
-}
-
+	th {
+		background-color: #f2f2f2;
+	}
 </style>

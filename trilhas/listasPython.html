@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EasyLearn</title>
+
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="icon" type="image/png" href="../resources/logo.png" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"
+		></script>
+	</head>
+
+	<body>
+		<header class="cabecalho">
+			<nav class="cabecalho_menu">
+				<a href="../index.html">Home</a>
+				<a href="../trilhas.html">Trilhas</a>
+				<a href="../sobre.html">Sobre Nós</a>
+				<a href="../contato.html">Contato</a>
+			</nav>
+		</header>
+
+		<main id="apresentacao">
+			<section class="apresentacao_conteudo">
+				<h1 class="apresentacao_conteudo_titulo">
+					Dominando Listas com Python
+				</h1>
+				<article>
+					<p class="apresentacao_conteudo_texto">
+						As listas em Python são como caixas mágicas que guardam
+						diversos valores. Números, palavras, misturas... tudo
+						cabe dentro! Organize, acesse e manipule seus dados com
+						facilidade. Domine essa ferramenta essencial e domine a
+						linguagem!
+					</p>
+					<table>
+						<thead>
+							<tr>
+								<th>Método</th>
+								<th>Funcionalidade</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>`.append(elemento)`</td>
+								<td>Adiciona um elemento ao final da lista.</td>
+							</tr>
+							<tr>
+								<td>`.clear()`</td>
+								<td>Remove todos os elementos da lista.</td>
+							</tr>
+							<tr>
+								<td>`.copy()`</td>
+								<td>Retorna uma cópia da lista.</td>
+							</tr>
+							<tr>
+								<td>`.count(elemento)`</td>
+								<td>
+									Conta o número de vezes que um elemento
+									aparece na lista.
+								</td>
+							</tr>
+							<tr>
+								<td>`.extend(lista)`</td>
+								<td>
+									Adiciona todos os elementos de outra lista à
+									lista original.
+								</td>
+							</tr>
+							<tr>
+								<td>`.index(elemento)`</td>
+								<td>
+									Retorna o índice da primeira ocorrência de
+									um elemento na lista.
+								</td>
+							</tr>
+							<tr>
+								<td>`.insert(índice, elemento)`</td>
+								<td>
+									Insere um elemento em uma posição específica
+									da lista.
+								</td>
+							</tr>
+							<tr>
+								<td>`.pop([índice])`</td>
+								<td>
+									Remove e retorna um elemento da lista. Se
+									nenhum índice for especificado, remove o
+									último elemento.
+								</td>
+							</tr>
+							<tr>
+								<td>`.remove(elemento)`</td>
+								<td>
+									Remove a primeira ocorrência de um elemento
+									da lista.
+								</td>
+							</tr>
+							<tr>
+								<td>`.reverse()`</td>
+								<td>Inverte a ordem da lista.</td>
+							</tr>
+							<tr>
+								<td>`.sort()`</td>
+								<td>Ordena a lista em ordem crescente.</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<article>
+						<h3>Método append()</h3>
+						<p>
+							O método append() em Python é utilizado para
+							adicionar um elemento ao final de uma lista. Isso é
+							semelhante a adicionar um novo item a uma lista de
+							compras conforme você vai lembrando de mais coisas
+							para comprar.
+						</p>
+						<code>
+							<pre>
+                        # Exemplo de utilização do método append()
+                        lista_compras = ['maçã', 'banana', 'laranja']
+                        lista_compras.append('uva')
+                        print(lista_compras)  # Saída: ['maçã', 'banana', 'laranja', 'uva']
+                        </pre
+							>
+						</code>
+					</article>
+
+					<article>
+						<h3>Método insert()</h3>
+						<p>
+							O método insert() em Python é utilizado para inserir
+							um elemento em uma posição específica da lista. Isso
+							é semelhante a adicionar uma nova carta em uma
+							posição específica em um baralho de cartas.
+						</p>
+						<code>
+							<pre>
+                        # Exemplo de utilização do método insert()
+                        numeros = [1, 2, 3, 4]
+                        numeros.insert(2, 5)
+                        print(numeros)  # Saída: [1, 2, 5, 3, 4]
+                        </pre
+							>
+						</code>
+					</article>
+
+					<article>
+						<h3>Método remove()</h3>
+						<p>
+							O método remove() em Python é utilizado para remover
+							a primeira ocorrência de um elemento específico da
+							lista. Isso é semelhante a retirar um item
+							específico de uma lista de tarefas pendentes.
+						</p>
+						<code>
+							<pre>
+                        # Exemplo de utilização do método remove()
+                        frutas = ['maçã', 'banana', 'laranja', 'uva']
+                        frutas.remove('banana')
+                        print(frutas)  # Saída: ['maçã', 'laranja', 'uva']
+                        </pre
+							>
+						</code>
+					</article>
+
+					<article>
+						<h3>Método pop()</h3>
+						<p>
+							O método pop() em Python é utilizado para remover e
+							retornar o elemento de uma posição específica da
+							lista. Isso é semelhante a tirar uma carta do topo
+							de um baralho e ver qual é.
+						</p>
+						<code>
+							<pre>
+                        # Exemplo de utilização do método pop()
+                        numeros = [1, 2, 3, 4]
+                        elemento_removido = numeros.pop(2)
+                        print(elemento_removido)  # Saída: 3
+                        print(numeros)  # Saída: [1, 2, 4]
+                        </pre
+							>
+						</code>
+					</article>
+
+					<article>
+						<h3>Método clear()</h3>
+						<p>
+							O método clear() em Python é utilizado para remover
+							todos os elementos de uma lista, deixando-a vazia.
+							Isso é semelhante a esvaziar uma caixa que continha
+							vários itens.
+						</p>
+						<code>
+							<pre>
+                        # Exemplo de utilização do método clear()
+                        numeros = [1, 2, 3, 4]
+                        numeros.clear()
+                        print(numeros)  # Saída: []
+                        </pre
+							>
+						</code>
+					</article>
+
+					<article>
+						<h3>Método index()</h3>
+						<p>
+							O método index() em Python é utilizado para retornar
+							o índice da primeira ocorrência de um elemento
+							específico na lista. Isso é semelhante a encontrar a
+							posição de um item em uma lista numerada de itens.
+						</p>
+						<code>
+							<pre>
+                        # Exemplo de utilização do método index()
+                        frutas = ['maçã', 'banana', 'laranja', 'uva']
+                        indice = frutas.index('laranja')
+                        print(indice)  # Saída: 2
+                        </pre
+							>
+						</code>
+					</article>
+
+					<article>
+						<h3>Método count()</h3>
+						<p>
+							O método count() em Python é utilizado para contar o
+							número de vezes que um elemento específico aparece
+							na lista. Isso é semelhante a contar quantas vezes
+							uma palavra aparece em um texto.
+						</p>
+						<code>
+							<pre>
+                        # Exemplo de utilização do método count()
+                        numeros = [1, 2, 2, 3, 4, 2]
+                        count_dois = numeros.count(2)
+                        print(count_dois)  # Saída: 3
+                        </pre
+							>
+						</code>
+					</article>
+
+					<article>
+						<h3>Método sort()</h3>
+						<p>
+							O método sort() em Python é utilizado para ordenar
+							os elementos da lista em ordem crescente por padrão.
+							Isso é semelhante a organizar cartas em ordem
+							numérica ou alfabética.
+						</p>
+						<code>
+							<pre>
+                        # Exemplo de utilização do método sort()
+                        numeros = [5, 2, 8, 1, 3]
+                        numeros.sort()
+                        print(numeros)  # Saída: [1, 2, 3, 5, 8]
+                        </pre
+							>
+						</code>
+					</article>
+
+					<article>
+						<h3>Método reverse()</h3>
+						<p>
+							O método reverse() em Python é utilizado para
+							inverter a ordem dos elementos em uma lista. Isso é
+							semelhante a ler uma lista de trás para frente.
+						</p>
+						<code>
+							<pre>
+                        # Exemplo de utilização do método reverse()
+                        frutas = ['maçã', 'banana', 'laranja', 'uva']
+                        frutas.reverse()
+                        print(frutas)  # Saída: ['uva', 'laranja', 'banana', 'maçã']
+                        </pre
+							>
+						</code>
+					</article>
+
+					<article>
+						<h3>Método copy()</h3>
+						<p>
+							O método copy() em Python é utilizado para criar uma
+							cópia superficial (shallow copy) da lista. Isso é
+							semelhante a tirar uma foto de uma lista para
+							preservar seu estado original.
+						</p>
+						<code>
+							<pre>
+                        # Exemplo de utilização do método copy()
+                        numeros = [1, 2, 3, 4]
+                        copia_numeros = numeros.copy()
+                        numeros.append(5)
+                        print(numeros)  # Saída: [1, 2, 3, 4, 5]
+                        print(copia_numeros)  # Saída: [1, 2, 3, 4]
+                        </pre
+							>
+						</code>
+					</article>
+
+					<h3>
+						Pronto para Aprender Mais? Siga nossas recomendações e
+						se aprofunde nesse conhecimento!
+					</h3>
+					<ol>
+						<li>
+							<h5>Listas em Python - Otávio Miranda</h5>
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/CSTb7pLsLZE?si=4IWIoZ3pMT6v2ca-"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+							></iframe>
+						</li>
+						<li>
+							<h5>
+								O que é List Comprehenssion em Python - Hashtag
+								Programação <b>(Opcional)</b>
+							</h5>
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/M2zL6LnQwkw?si=gcdCnb9QlxSWKHLp"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+							></iframe>
+						</li>
+						<li>
+							<h5>
+								Exercício Python #085 - Listas com pares e ímpares - Curso em Vídeo <b>(IMPORTANTE)</b>
+							</h5>
+							<iframe
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/2-fy24bbMJ4?si=O3rffTfYYSF_GvLG"
+								title="YouTube video player"
+								frameborder="0"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+								allowfullscreen
+							></iframe>
+						</li>
+					</ol>
+				</article>
+			</section>
+		</main>
+	</body>
+
+	<footer class="rodape">
+		<p>Desenvolvido por EasyLearn ©️</p>
+	</footer>
+</html>
+
+<style>
+	table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	th,
+	td {
+		border: 1px solid #dddddd;
+		text-align: left;
+		padding: 8px;
+	}
+
+	th {
+		background-color: #f2f2f2;
+	}
+</style>
