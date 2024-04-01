@@ -1,128 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>EasyLearn</title>
 
-		<link rel="stylesheet" href="./assets/css/styles.css" />
-		<link rel="icon" type="image/png" href="resources/logo.png" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-			crossorigin="anonymous"
-		/>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-			crossorigin="anonymous"
-		></script>
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>EasyLearn</title>
 
-	<body>
-		<header class="cabecalho">
-			<nav class="cabecalho_menu">
-				<a href="index.html">Home</a>
-				<a href="trilhas.html">Trilhas</a>
-				<a href="sobre.html">Sobre Nós</a>
-				<a href="contato.html">Contato</a>
-			</nav>
-		</header>
+	<link rel="stylesheet" href="./assets/css/styles.css" />
+	<link rel="icon" type="image/png" href="resources/logo.png">
+</head>
 
-		<main class="apresentacao">
-			<section class="apresentacao_conteudo">
-				<h1 class="apresentacao_conteudo_titulo">EasyLearn</h1>
-				<p class="apresentacao_conteudo_texto">
-					Plataforma de cursos rápidos sobre programação focada em
-					pessoas neurodivergentes ou que simplesmente precisam
-					aprender algo rapidamente.
-				</p>
-				<div class="apresentacao_links">
-					<h2 class="apresentacao_links_subtitulo">
-						Estude com a gente!
-					</h2>
-					<a class="apresentacao_links_navegacao" href="trilhas.html"
-						>Nossas trilhas</a
-					>
-					<a class="apresentacao_links_navegacao" href="contato.html"
-						>Entre em contato</a
-					>
-				</div>
-				<div>
-					<h2 class="apresentacao_conteudo_subtitulo">
-						Experiência Singular de Aprendizado
-					</h2>
-					<p class="apresentacao_conteudo_texto">
-						Acesse trilhas de aprendizado e desenvolvimento em
-						programação em um plataforma completa 100% focada no
-						melhor aproveitamento do seu aprendizado utilizando uma
-						metodologia voltada a experimentação prática. Trilhas,
-						exercícios, suporte e um forúm onde você poderá
-						interagir com outras pessoas com a mesma necessidade e
-						interesse que você.
-					</p>
-				</div>
-				<div class="apresentacao_links">
-					<h2 class="apresentacao_links_subtitulo">
-						Trilhas mais procuradas:
-					</h2>
-					<a
-						class="apresentacao_links_navegacao"
-						href="trilhas/web_front.html"
-						target="_blank"
-						>Criando sua Primeira Página com HTML</a
-					>
-					<img
-						class="apresentacao_imagem"
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-						alt="logo html5"
-						width="50"
-						height="50"
-					/>
-					<a
-						class="apresentacao_links_navegacao"
-						href="trilhas/javascript.html"
-						target="_blank"
-						>Decisões condicionais com Javascript</a
-					>
-					<img
-						class="apresentacao_imagem"
-						src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-						alt="logo JavaScript"
-						width="50"
-						height="50"
-					/>
-				</div>
-				
-				<h2 class="apresentacao_conteudo_subtitulo">
-					Tire sua dúvida com a gente:
-				</h2>
-				<form action="processar_formulario.php" method="post">
-					<label for="nome">Nome:</label>
-					<input type="text" id="nome" name="nome" required />
+<body>
 
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" required />
+	<header class="cabecalho">
+		<nav class="cabecalho_menu">
+			<a href="index.html">Home</a>
+			<a href="trilhas.html">Trilhas</a>
+			<a href="sobre.html">Sobre Nós</a>
+			<a href="contato.html">Contato</a>
+		</nav>
+	</header>
 
-					<label for="mensagem">Mensagem:</label>
-					<textarea
-						id="mensagem"
-						name="mensagem"
-						rows="4"
-						required
-					></textarea>
-					<br />
-					<br />
+	<main class="apresentacao">
+		<section class="apresentacao_conteudo">
+			<h1 class="apresentacao_conteudo_titulo">EasyLearn</h1>
+			<p class="apresentacao_conteudo_texto">Plataforma de cursos rápidos sobre programação focada em pessoas
+				neurodivergentes ou que simplesmente precisam aprender algo rapidamente.</p>
+			<div class="apresentacao_links">
+				<h2 class="apresentacao_links_subtitulo">Estude com a gente!</h2>
+				<a class="apresentacao_links_navegacao" href="trilhas.html">Nossas trilhas</a>
+				<a class="apresentacao_links_navegacao" href="contato.html">Entre em contato</a>
+			</div>
+			<h2 class="apresentacao_conteudo_subtitulo">Experiência Singular de Aprendizado</h2>
+			<p class="apresentacao_conteudo_texto">Acesse trilhas de aprendizado e desenvolvimento em programação em um
+				plataforma completa 100% focada no melhor aproveitamento do seu aprendizado. Trilhas, exercícios,
+				suporte e um forúm onde você poderá interagir com outras pessoas com a mesma necessidade e interesse que
+				você.</p>
+			<div class="apresentacao_links">
+				<h2 class="apresentacao_links_subtitulo">Trilhas mais procuradas:</h2>
+				<a class="apresentacao_links_navegacao" href="trilhas/web_front.html" target="_blank">HTML5 e CSS3:
+					Primeiros passos</a>
+				<img class="apresentacao_imagem"
+					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+					alt="logo html5" width="50" height="50">
+				<img class="apresentacao_imagem"
+					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+					alt="logo css3" width="50" height="50">
+				<a class="apresentacao_links_navegacao" href="trilhas/javascript.html" target="_blank">JavaScript:
+					Programando na linguagem da WEB</a>
+				<img class="apresentacao_imagem"
+					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+					alt="logo JavaScript" width="50" height="50">
+			</div>
+			<h2 class="apresentacao_conteudo_subtitulo">Tire sua dúvida com a gente:</h2>
+			<form action="processar_formulario.php" method="post">
+				<label for="nome">Nome:</label>
+				<input type="text" id="nome" name="nome" required>
 
-					<input type="submit" value="Enviar" />
-					<input type="reset" value="Limpar" />
-				</form>
-			</section>
-		</main>
-	</body>
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
 
-	<footer class="rodape">
-		<p>Desenvolvido por EasyLearn ©️</p>
-	</footer>
+				<label for="mensagem">Mensagem:</label>
+				<textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+				<input type="submit" value="Enviar">
+			</form>
+		</section>
+	</main>
+
+</body>
+
+<footer class="rodape">
+	<p>Desenvolvido por EasyLearn ©️</p>
+</footer>
+
 </html>

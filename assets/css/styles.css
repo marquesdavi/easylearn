@@ -1,0 +1,111 @@
+.cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #FBCAF9;
+    z-index: 1000;
+}
+
+.cabecalho_menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.cabecalho_menu a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0 10px;
+}
+
+.cabecalho_menu a:hover {
+    color: #fff;
+}
+
+.apresentacao {
+    margin: 0;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 80%;
+}
+
+.apresentacao_conteudo {
+    margin-bottom: 20px;
+}
+
+.apresentacao_conteudo_titulo {
+    color: #000000;
+}
+
+.apresentacao_conteudo_texto {
+    line-height: 1.5;
+}
+
+.apresentacao_links {
+    margin-top: 20px;
+}
+
+.apresentacao_links_subtitulo {
+    color: #000000;
+}
+
+.apresentacao_links_navegacao {
+    color: #007bff;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.apresentacao_links_navegacao:hover {
+    color: #0056b3;
+}
+
+.apresentacao_imagem {
+    margin-right: 10px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
