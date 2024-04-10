@@ -23,55 +23,50 @@
 
 	<main class="apresentacao">
 		<section class="apresentacao_conteudo">
-			<h1 class="apresentacao_conteudo_titulo">EasyLearn</h1>
-			<p class="apresentacao_conteudo_texto">Plataforma de cursos rápidos sobre programação focada em pessoas
-				neurodivergentes ou que simplesmente precisam aprender algo rapidamente.</p>
-			<div class="apresentacao_links">
-				<h2 class="apresentacao_links_subtitulo">Estude com a gente!</h2>
-				<a class="apresentacao_links_navegacao" href="trilhas.html">Nossas trilhas</a>
-				<a class="apresentacao_links_navegacao" href="contato.html">Entre em contato</a>
+			<h1 class="apresentacao_conteudo_titulo">EasyLearn <img src="./resources/logo.png" alt="logo" width="50" height="50"></h1>
+			<p class="apresentacao_conteudo_texto1">Plataforma de cursos rápidos sobre programação focada em <i>pessoas
+				neurodivergentes</i> ou que simplesmente precisam aprender algo rapidamente.</p>
+			<h2 class="apresentacao_conteudo_subtitulo1">ESTUDE <span id="txt_animado"></span></h2>
+			<div id="links_home">
+				<a class="apresentacao_links_navegacao" href="trilhas.html"><b>Nossas trilhas</b></a>
+				<a class="apresentacao_links_navegacao" href="contato.html"><b>Entre em contato</b></a>
 			</div>
-			<h2 class="apresentacao_conteudo_subtitulo">Experiência Singular de Aprendizado</h2>
-			<p class="apresentacao_conteudo_texto">Acesse trilhas de aprendizado e desenvolvimento em programação em um
-				plataforma completa 100% focada no melhor aproveitamento do seu aprendizado. Trilhas, exercícios,
+			<h2 class="apresentacao_conteudo_subtitulo2">Experiência Singular de Aprendizado</h2>
+			<p class="apresentacao_conteudo_texto2">Acesse trilhas de aprendizado e desenvolvimento em programação em um
+				plataforma completa, <b>100% focada no melhor aproveitamento do seu aprendizado</b>. Trilhas, exercícios,
 				suporte e um forúm onde você poderá interagir com outras pessoas com a mesma necessidade e interesse que
 				você.</p>
-			<div class="apresentacao_links">
-				<h2 class="apresentacao_links_subtitulo">Trilhas mais procuradas:</h2>
-				<a class="apresentacao_links_navegacao" href="trilhas/web_front.html" target="_blank">HTML5 e CSS3:
-					Primeiros passos</a>
-				<img class="apresentacao_imagem"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
-					alt="logo html5" width="50" height="50">
-				<img class="apresentacao_imagem"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
-					alt="logo css3" width="50" height="50">
-				<a class="apresentacao_links_navegacao" href="trilhas/javascript.html" target="_blank">JavaScript:
-					Programando na linguagem da WEB</a>
-				<img class="apresentacao_imagem"
-					src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
-					alt="logo JavaScript" width="50" height="50">
+			<h2 class="apresentacao_conteudo_subtitulo2">Trilhas mais procuradas:</h2>
+			<div id="mais_acessados">
+				<div class="link_mais_acessados">
+					<img class="apresentacao_imagem_home" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="logo html5" width="50" height="50">
+					<img class="apresentacao_imagem_home" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="logo css3" width="50" height="50">
+					<a class="apresentacao_links_navegacao2" href="trilhas/web_front.html" target="_blank"><b>HTML5 e CSS3: Primeiros passos</b></a>
+				</div>
+				<div class="link_mais_acessados">
+					<img class="apresentacao_imagem_home" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="logo JavaScript" width="50" height="50">
+					<a class="apresentacao_links_navegacao2" href="trilhas/javascript.html" target="_blank"><b>JavaScript: Programando na linguagem da WEB</b></a>
+				</div>
 			</div>
-			<h2 class="apresentacao_conteudo_subtitulo">Tire sua dúvida com a gente:</h2>
-			<form action="processar_formulario.php" method="post">
+			<h2 class="apresentacao_conteudo_subtitulo3">TIRE SUA DÚVIDA COM A GENTE ⤵</h2>
+			<form class="formulario" action="processar_formulario.php" method="post">
 				<label for="nome">Nome:</label>
 				<input type="text" id="nome" name="nome" required>
-
 				<label for="email">Email:</label>
 				<input type="email" id="email" name="email" required>
-
 				<label for="mensagem">Mensagem:</label>
 				<textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-				<input type="submit" value="Enviar">
 			</form>
+			<input class="formulario_button" type="submit" value="Enviar">
 		</section>
 	</main>
 
 </body>
 
-<footer class="rodape">
-	<p>Desenvolvido por EasyLearn ©️</p>
+<footer>
+	<div class="rodape">
+		<p>Desenvolvido por <b>EasyLearn</b> ©️</p>
+	</div>
 </footer>
 
 </html>
